@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Categories - BizSpot</title>
+</head>
+
+<body>
+
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+        <h1>Explore Categories</h1>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="login.html"> Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" placeholder="Search for a category..." id="searchBar">
+        <button onclick="searchCategory()">🔍</button>
+    </div>
+
+    <!-- Categories List -->
+    <section class="categories-list">
+        <h1>Popular Categories</h1><br>
+        <ul>
+           <li>🏨 Hotels</li>
+            <li>🍽 Restaurants</li>
+            <li>🛒 Shopping Malls</li>
+            <li>💇‍♀ Salons</li>
+            <li>🏥 Hospitals</li>
+            <li>🚗 Car Services</li>
+          <li>🏘 Real Estate</li>
+            <li>📱 Electronics</li>
+            <li>🏋‍♂ Gyms & Fitness</li>
+            <li>🎉 Event Planners</li>
+            <li>💼 Business Services</li>
+            <li>🎓 Educational Institutes</li>
+            <li>⚙ Mechanics & Repair Shops</li>
+            <li>💊 Pharmacies</li>
+            <li>🎬 Entertainment Spots</li>
+            <li>🧵 Tailors</li>
+            <li>🛠 Home Services</li>
+            <li>✈ Travel Agencies</li>
+            <li>🎵 Music & Dance Classes</li>
+            <li>📚 Libraries</li>
+            <li>🎨 Art & Craft Stores</li>
+
+        </ul>
+
+    </section>
+
+    <br>
+
+    <!-- Overall Rating Section -->
+    <section class="rating">
+        <h2>⭐ Overall Rating: 4.8/5</h2>
+       <p> <h4>Based on 1000+ user reviews</h4></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>BizSpot - Your Trusted Business Directory</p>
+        <p>Contact us: contact@bizspot.com</p>
+        <p>&copy; 2025 BizSpot | All Rights Reserved</p>
+        <a href="#">Instagram</a> | <a href="#">Facebook</a>
+    </footer>
+
+    <script>
+        // Basic Search Function
+        function searchCategory() {
+            const input = document.getElementById('searchBar').value.toLowerCase();
+            const categories = document.querySelectorAll('.categories-list li');
+
+            categories.forEach(category => {
+                if (category.textContent.toLowerCase().includes(input)) {
+                    category.style.display = 'block';
+                } else {
+                    category.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

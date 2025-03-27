@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizSpot - Your Business Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+       <!-- Logo -->
+    <img src="image/BizSpot-logo.jpg" alt="BizSpot Logo" width="300px"  >
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="about.html">📖 About</a></li>
+            <li><a href="categories.html">📁 Categories</a></li>
+            <li><a href="contact.html">📞 Contact</a></li>
+            <li><a href="login.html">🔑 Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to BizSpot !</h1>
+        <p><i>Your All-in-One Business Directory — Find Anything, Anytime!</i></p>
+        <br>
+        <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+    </header>
+    <br>
+
+    <!-- Categories Section - Revamped -->
+    <section class="categories">
+        <h2>✨ Explore Trending Categories ✨</h2><br>
+        <div class="category-container">
+
+            <div class="category-card">
+                <h3>🔥 Top Startups</h3>
+                <p>Explore the most innovative startups reshaping industries!</p>
+            </div>
+
+            <div class="category-card">
+                <h3>🌟 Best Rated</h3>
+                <p>Find the highest-rated businesses loved by everyone.</p>
+            </div>
+
+            <div class="category-card">
+                <h3>💼 Business Services</h3>
+                <p>Need a consultant or designer? We’ve got you covered!</p>
+            </div>
+
+            <div class="category-card">
+                <h3>🚀 Tech Giants</h3>
+                <p>Discover the leading tech companies changing the world.</p>
+            </div>
+
+            <div class="category-card">
+                <h3>🎉 Events & Fun</h3>
+                <p>Find entertainment hubs, events, and fun activities near you.</p>
+            </div>
+
+            <div class="category-card">
+                <h3>🌍 Explore Local Gems</h3>
+                <p>Uncover hidden gems and local favorites in your city!</p>
+            </div>
+
+        </div>
+    </section>
+<br>
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Premium Services</h2>
+        <p>⭐ Find trusted businesses, read reviews, and connect instantly — all for FREE!</p>
+    </section>
+
+    <!-- User Reviews Section -->
+    <section class="reviews">
+        <h2>What Our Happy Users Say</h2>
+        <p>🌟 "This is exactly what I needed!" — Amina</p>
+        <p>🌟 "Super helpful directory. 10/10!" — Areeba</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2>Contact Us 📩</h2>
+        <img src="image/contact-banner.jpg" alt="Contact Us" />
+        <form>
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea placeholder="Your Message" rows="5" required></textarea><br><br>
+            <button type="submit">🚀 Send Message</button><br><br>
+        </form>
+    </section>
+
+    <!-- Overall Rating Section -->
+    <section class="rating">
+        <h2>⭐ Overall Rating: 4.9/5</h2>
+        <p>Based on 2500+ user reviews</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>BizSpot  - Your Business Hub!</p>
+        <p>📧 contact@bizspot.com | 📞 +123 456 7890</p>
+        <p>&copy; 2025 BizSpot | All Rights Reserved</p>
+        <a href="#">📸 Instagram</a> | <a href="#">📘 Facebook</a> | <a href="#">🐦 Twitter</a>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const toggleBtn = document.getElementById('darkModeToggle');
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+/* Reset & Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+/* Removed extra closing curly brace */
+}
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e66b06;
+    color: #e6dfdf;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/*style about bizspot*/
+.about-header{
+background-color: #FF4500;
+padding: 20px;
+border-radius: 10px;
+text-align:center;
+}
+a{
+color:#3b82f6;
+text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/*style contact bizspot*/
+.contact-header{
+    background-color: #FF4500;
+    padding: 10px;
+    border-radius: 10px;
+    text-align:center;
+    }
+    /* Removed duplicate body and a styles */
+    
+body{
+    background-color: #ffffff;
+    color: #0c0c0c;
+   transition:background-color 0.3s ease, color 0.3s ease; 
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+    background: linear-gradient(132deg, #f3a744fd , #e45555 );
+    /*background-color: #f0a017;*/
+    color: #ffffff;
+}
+/*mode toggle button*/
+#modeToggle {
+    background:none;
+    font-size:20px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;    
+}
+
+
+/* Navigation Bar Styling */
+nav ul {
+    background: #121212;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/*navbar styling*/
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+    list-style: none;
+}
+.navbar li{
+    margin:0 15px;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    color: #f5f4f3;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #e66108;
+    border-radius: 5px;
+}
+
+/* ✨ 3D Search Bar Styling ✨ */
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#searchBar {
+    box-shadow: 3px 3px 8px #bbb;
+    transition: 0.3s ease-in-out;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+#searchBar:focus {
+    box-shadow: 3px 3px 15px #FF4500;
+}
+
+/* 🔥 3D Button Styling 🔥 */
+button {
+    padding: 10px;
+    background-color: #fa6705;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #20201f;
+    box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.5);
+    transform: translateY(-2px);
+}
+/* Promo Banner Styling */
+.promo-banner {
+    text-align: center;
+    background-color: #f15c06;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/* 🎉 Categories Section with 3D Cards 🎉 */
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.categories div {
+    width: 200px;
+    
+    border: 1px solid #f7f3f3;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding:10px;
+    border:1px solid #ddd;
+
+
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr );
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Each category card style */
+.category-card {
+  
+
+    width: 100%; /* Allow grid to handle width */
+    background: #f56a32;
+    padding: 20px !important;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+     border:none;
+    outline:none;
+    cursor: pointer;
+}
+
+
+
+/* Hover effect */
+.category-card:hover {
+    transform: translateY(-5px);
+    background-color: #f7800a;
+}
+
+/* Responsive fix for smaller screens */
+@media (max-width: 768px) {
+    .category-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .category-container {
+        grid-template-columns: repeat(1,1fr);/* 1 card per row on mobile */
+    }
+}
+
+/*categories section*/
+
+.categories-list {
+    padding: 20px;
+    text-align: center;
+}
+
+.categories-list li {
+  
+  background: linear-gradient(135deg, #3a323a, #ff5100);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+   max-width: 200px;
+  align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+
+
+
+
+.categories-list li:hover {
+
+    transform: translateY(-5px);
+    background-color:  linear-gradient(135deg, #ff7b00, #ff4c4c);
+}
+
+.categories h2 {
+   
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #2c2626;
+}
+/*grid system for categories*/
+.categories-list ul {
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+
+   
+
+}
+.categories-list ul li{
+       width:100%;
+       text-align: centerI;
+
+}
+
+
+
+/* ✨ Category Grid Layout ✨ */
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+    justify-content: center;
+    gap: 20px;
+    padding:20px;
+}
+.category:hover{
+    background-color:rgb(236, 160, 17) !important;
+    color: white !important;
+}
+.categories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+
+/* 🔥 Category Card Styling 🔥 */
+.category-card {
+    background: #f56a32;
+    padding: 30px;
+    width: 18px;
+    border-radius: 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow:none !important;
+    border:none !important;
+    outline:none !important;
+
+    transform: perspective(1000px) rotateX(5deg);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+   background-color: #ff7b00;
+
+ 
+
+}
+
+/* Rating Section Styling */
+.rating {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #fff;
+}
+
+
+
+/* Footer Styling */
+footer {
+    padding: 10px;
+    background: #030303;
+    color: #f0eaea;
+    font-size: 0.9rem;
+    text-align: center;
+}
+footer a{
+    color: #f58403;
+    margin: 0 10px;
+    text-decoration: none;
+}
+footer a:hover{
+    color:#fff;
+}
